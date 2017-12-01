@@ -1,98 +1,75 @@
 body{
-   background-color: #BBBBBB;
-
+    background-color: #BBBBBB;
 }
 
 div.container{
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas:
-     "header header"
-     "main aside"
-     "footer footer";
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-areas:
+         "header header"
+         "main aside"
+         "footer footer";
 
-     margin-left: auto;
-     margin-right: auto;
-    max-width:1000px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width:1000px;
 }
 
 header{
-   background-color: #BBBBBB;
-   grid-area: header;
-   text-align: center;
-   margin-top: 40px;
-   margin-bottom: 80px;
-   margin-right: 50px;
+     background-color: #BBBBBB;
+     grid-area: header;
+     text-align: center;
+     margin-top: 40px;
+     margin-bottom: 80px;
 
 }
 
 main{
-   background-color:#BBBBBB;
-   grid-area:main;
-   margin-right: 30px;
-   margin-bottom: 30px;
+     background-color:#BBBBBB;
+     grid-area:main;
+     margin-right: 30px;
+     margin-bottom: 30px;
 }
 
 aside{
-   background-color:#999999;
-   grid-area:aside;
-   text-align: center;
-   max-height: 2170px;
-
+     background-color:#999999;
+     grid-area:aside;
+     text-align: center;
+     max-height: 2170px;
 }
 
 
 footer{
-   background-color:#AAAAAA;
-   grid-area: footer;
-   text-align: center;
-
-}
-
-
-@media (max-width: 600px) {
-
-   div.container {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-
-             "header"
-              "main"
-              "aside"
-             "footer";
-    }
+     background-color:#AAAAAA;
+     grid-area: footer;
+     text-align: center;
+     max-width: 100%;
 
 }
 
 h1 {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  font-size: 95px;
-  margin: 0px;
-  text-align: center;
-  text-shadow: 2px 2px 8px #555555;
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility;
-
-
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 95px;
+    margin: 0px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #555555;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
 }
 
 .red{
-color: #FFFFFF;
-
+    color: #FFFFFF;
 }
 
 h2{
-font-family: 'Cinzel', serif;
-font-size: 30px;
-margin-bottom: 30px;
-font-style: italic;
-
-
+    font-family: 'Cinzel', serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-style: italic;
 }
 
 h3{
-font-size: 40px;
-
+    font-size: 40px;
 }
 
 h4.name {
@@ -104,96 +81,109 @@ h4.name {
 }
 
 p{
-font-family: 'Dosis', sans-serif;
-font-size: 20px;
-line-height: 1.6;
-
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 a,a:visited,a:hover,a:active{
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-	position:relative;
-  transition:0.5s color ease;
-	text-decoration:none;
-  text-shadow: 2px 2px 8px #555555;
-	color:#000000;
-	font-size:2.5em;
-  margin-left: 20px;
-  margin-right: 20px;
+    transition:0.5s color ease;
+  	text-decoration:none;
+    text-shadow: 2px 2px 8px #555555;
+  	color:#000000;
+  	size:60px;
+
 }
+
 a:hover{
-	color:#FFFFFF;
-}
-a.before:before,a.after:after{
-  content: "";
-  transition:0.5s all ease;
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:absolute;
-}
-a.before:before{
-  top:-0.25em;
-}
-a.after:after{
-  bottom:-0.25em;
+  	color:#FFFFFF;
 }
 
 table {
- margin-left: auto;
- margin-right: auto;
- margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 100%;
 }
 
 caption {
-  color: #000000;
-  font-size: 30px;
-  font-family: 'Cinzel', serif;
-  font-weight: bolder;
-  font-style: italic;
-  margin-bottom: 10px;
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    font-weight: bolder;
+    font-style: italic;
+    margin-bottom: 10px;
 }
+
 thead{
-  font-family: 'Merriweather', serif;
-  color: #000000
+    font-family: 'Merriweather', serif;
+    color: #000000
 }
 
 tbody{
-  font-family: 'Merriweather', serif;
-  color: #000000;
+    font-family: 'Merriweather', serif;
+    color: #000000;
 }
 
-tr:hover{background-color:#adadad}
+tr:hover{
+    background-color:#adadad;
+}
 
 th {
-  background-color:#adadad;
-  padding: 7px;
+    background-color:#adadad;
+    padding: 7px;
 }
 
 td {
-  padding: 7px;
+    padding: 7px;
 }
 
-img{
-  max-width: 100%;
-
+img {
+    max-width: 100%;
 }
 
-@media (max-width: 600px) {
+.videoWrapper {
+  	position: relative;
+  	padding-bottom: 56.25%; /* 16:9 */
+  	padding-top: 25px;
+  	height: 0;
+}
 
-h1 {
-  font-size: 50px;
+.videoWrapper iframe {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+}
+
+
+@media(max-width: 800px){
+  div.container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+           "header"
+            "main"
+            "aside"
+           "footer";
   }
 
-  a{
+  h1 {
+    font-size: 100px;
+    }
 
-font-size: 20px;
-color: #000000
+    a{
+    font-size: 20px;
+    color: #000000
+    }
+
+  aside{
+    padding-bottom: 390px;
 
   }
 
   table {
-    width: 100%;
+    max-width: 100%;
   }
 
   thead {
@@ -201,7 +191,6 @@ color: #000000
   }
 
   tr {
-
     display: block;
     margin-top: 7px;
     margin-bottom: 7px;
@@ -217,4 +206,67 @@ color: #000000
     float: left;
     font-weight: bold;
   }
+
 }
+
+@media (max-width: 600px) {
+    div.container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+             "header"
+              "main"
+              "aside"
+             "footer";
+    }
+
+    main{
+        margin-right: 0px;
+    }
+
+    aside{
+        max-width: 100%;
+    }
+
+    footer{
+        position: sticky;
+    }
+
+    h1 {
+        font-size: 50px;
+      }
+
+      a{
+        font-size: 20px;
+        color: #000000
+      }
+
+      p{
+        max-width: 100%;
+      }
+
+      table {
+        max-width: 100%;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        display: block;
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+
+      td {
+        display: block;
+        text-align: right;
+      }
+
+      td:before {
+        content: attr(aria-label);
+        float: left;
+        font-weight: bold;
+      }
+
+    }
